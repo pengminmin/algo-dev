@@ -14,12 +14,17 @@ import javax.annotation.Resource;
 public class SortServiceImpl implements SortService {
     @Resource
     BubbleSortManager bubbleSortManager;
+
+    /**
+     * 冒泡排序
+     *
+     * @param array
+     * @return
+     */
     @Override
     public int[] bubbleSort(int[] array) {
         return bubbleSortManager.bubbleSortV1(array);
     }
-
-
 
 
 }

@@ -9,6 +9,9 @@ package com.example.bubble.sort.service;
 public interface SortService {
     /**
      * 冒泡排序
+     *
+     * @param array
+     * @return
      */
     int[] bubbleSort(int[] array);
 

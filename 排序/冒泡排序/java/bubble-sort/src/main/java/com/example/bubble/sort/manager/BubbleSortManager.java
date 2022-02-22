@@ -10,7 +10,12 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class BubbleSortManager {
-
+    /**
+     * 冒泡排序第个一版本
+     *
+     * @param array
+     * @return
+     */
     public int[] bubbleSortV1(int[] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length - 1; j++) {
@@ -24,6 +29,12 @@ public class BubbleSortManager {
         return array;
     }
 
+    /**
+     * 冒泡排序第二个版本
+     *
+     * @param array
+     * @return
+     */
     public int[] bubbleSortV2(int[] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {
@@ -37,6 +48,12 @@ public class BubbleSortManager {
         return array;
     }
 
+    /**
+     * 冒泡排序第三个版本
+     *
+     * @param array
+     * @return
+     */
     public int[] bubbleSortV3(int[] array) {
         for (int i = 0; i < array.length; i++) {
             boolean flag = false;
